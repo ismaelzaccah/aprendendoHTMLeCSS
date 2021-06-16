@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Tabelas</title>
+
+</head>
+<body>
+<!--Início da Tabela-->
+    <table border="5">
+    <!--título da tabela CAPTION-->
+        <caption>Testes com tabelas em HTML5</caption>
+    <!--cabeçalho da tabela THEAD-->
+        <thead align="center">
+            <tr>
+                <th>Curso</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th colspan="2">Endereço com Numero</th>
+            </tr>       
+        </thead>
+    <!--rodapé TFOOT, uma celula mesclando as colunas-->
+        <tfoot align="center">
+            <tr>
+                <td colspan="5" >Análise e Desenvolvimento de Sistemas</td>
+            </tr>
+        </tfoot>
+    <!--corpo TBODY com conteudo das células-->
+        <tbody align="center">
+            <td rowspan="5">ADS</td><!--Nome do curso ADS mesclando 4 linhas-->
+            
+            <tr><!--dados Barbara-->
+                <td>Bárbara</td>
+                <td>32</td>
+                <td>Rua Antônio</td>
+                <td>606</td>
+            </tr>
+            <tr><!--dados Ismael-->
+                <td>Ismael</td>
+                <td>25</td>
+                <td>Rua Alice</td>
+                <td>22</td>
+            </tr>
+            <tr><!--dados Joaquim-->
+                <td>Joaquim</td>
+                <td>27</td>
+                <td>Rua Berkley</td>
+                <td>119</td>
+            </tr>
+            <tr><!--dados Beatriz-->
+                <td>Beatriz</td>
+                <td>25</td>
+                <td>Rua dos Bolos</td>
+                <td>75</td>
+            </tr>
+
+        </tbody>
+    </table>
+<!--Fim da Tabela -->
+
+<br>
+
+<!--Inicio da lista Não Ordenada-->
+<p> <b>Lista de muambas pra comer no Fds</b>
+    <ul>
+        <li>Pratos Quentes <!--Item 01 com uma sub-lista-->
+            <ul>
+                <li>Pizza</li>
+                <li>Acarajé</li>
+                <li>MacCheese</li>
+                <li>Hamburguer</li>
+            </ul>
+        </li>
+        <li>Pratos Frios <!--Item 02 com uma sublista-->
+            <ul>
+                <li>Sushi</li>
+                <li>Sorvete</li>
+                <li>Mousse</li>
+                <li>Guaca Mole</li>
+            </ul>
+        </li>
+    </ul>
+</p>
+<!--Fim da lista Não Ordenada-->
+
+<!--Inicio da lista Ordenada-->
+<p> <b>Lista de Guloseimas para Fazer no Fds <i>apartir do numeral 10</i> </b>
+    <ol start="10">
+        <li>Pratos Principais <!--Primeira categoria-->
+            <ol type="a">
+                <li>Pizza Caseira</li>
+                <li>MacCheese</li>
+                <li>Batata Frita</li>
+            </ol>
+        </li>
+        
+        <li>Sobremesas <!--Segunda Categoria-->
+            <ol type="a">
+                <li>Sorvete de Banana</li>
+                <li>Brownie</li>
+                <li>Mousse de Morango</li>
+            </ol>
+        </li>
+        
+        <li>Bebidas <i>(Opcional)</i> <!--Terceira Categoria-->
+            <ol>
+                <li>Coca-Cola</li>
+                <li>Aquarius Fresh</li>
+                <li>Tang Boladão</li>
+            </ol>
+        </li>
+
+
+    </ol>
+</p>
+<!--Fim da Lista Ordenada-->
+
+</body>
+</html>
