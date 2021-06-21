@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com img e figure</title>
+
+    <style>
+        thead {
+            text-align: center;
+            color: rgb(228, 0, 0);
+            background-color: sandybrown;
+            font-size: 20pt;
+            font-family: Arial;
+            font-weight: bolder;
+            
+        }
+        tbody {
+            text-align: center;
+            color: black;
+            background-color: sandybrown;
+        }
+        tfoot {
+            text-align: center;
+            color: rgb(228, 0, 0);
+            background-color: sandybrown;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body><!--Testes com insersão de imagens dentro de tabelas-->
+   
+<table>
+    <thead><!--Título-->
+        <tr><td colspan="3">Lista de Comidas para o Café da Manhã</td></tr>
+    </thead> 
+    
+    <tfoot><!--Rodapé com asterisco-->
+        <tr><td colspan="3">*Café não está autorizado para o Ismael</td></tr>
+    </tfoot>
+    
+    <tbody>  
+       <!--Inicio da tabela com imagens-->
+            
+            <tr><!--Titulos da tabela-->
+                <th>Nome do Prato</th>
+                <th>Ingredientes</th>
+                <th>Foto com Link da Receita</th>
+            </tr>
+            
+                        
+            <tr><!--Linha 1-->
+                <td>Abacate com Ovo</td>
+                <td>Abacate, ovo, pimenta do reino, sal agosto</td>
+                <td>
+                    <a href="https://cybercook.com.br/receitas/acompanhamentos/receita-de-abacate-recheado-de-ovo-122303">
+                        <img src="img/abacate-com-ovo.jpg" title="Abacate com Ovo" height="100px">
+                    </a>
+                </td>
+            </tr>
+            
+            <tr><!--Linha 2-->
+                <td>Panqueca com Banana</td>
+                <td>Banana, aveia, açúcar ou adoçante agosto</td>
+                <td>
+                    <a href="https://cybercook.com.br/receitas/massas/receita-de-panqueca-de-banana-fit-122686">
+                        <img src="img/panqueca-de-banana.jpg" title="Panqueca de Banana com Aveia" height="100px">
+                    </a>
+                </td>           
+            </tr>
+            
+            <tr><!--Linha 3-->
+                <td>Pão com Manteiga</td>
+                <td>Pão carioquinha e Manteiga</td>
+                <td>
+                    <a href="https://www.tudogostoso.com.br/receita/116385-pao-de-manteiga.html">
+                        <img src="img/pao-com-manteiga.jpg" title="Pão com Manteiga" height="100px">
+                    </a>
+                </td>
+            </tr>
+            
+            <tr><!--Linha 4-->
+                <td>Tapioca Recheada</td>
+                <td>Fécula, água, sal agosto e recheio</td>
+                <td>
+                    <a href="https://www.tudogostoso.com.br/receita/80753-tapioca-recheada.html">
+                        <img src="img/tapioca-recheada.jpg" title="Tapioca Recheada" height="100px">
+                    </a>
+                </td>
+            </tr>
+    </tbody>
+<table>
+
+</body>
+</html>
+
+
+
+
+
+
