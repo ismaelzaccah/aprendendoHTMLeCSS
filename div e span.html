@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div, span e um pouco de CSS</title>
+
+    <style>
+        h1 { /*Formatação h1 Titulo*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 32pt;
+            color: rgb(141, 66, 0);
+        }
+
+        div { /*Formatação div geral*/
+            padding: 5px;
+            margin: 5px;
+        }
+        /*Inicio da formatação div individual*/
+        #cafe-manha{ 
+            color:brown;
+            background-color: rgb(209, 163, 163);
+        }
+        #almoço {
+            color: red;
+            background-color: rgb(251, 181, 181);
+        }
+        #merenda {
+            color: brown;            
+            background-color: rgb(209, 163, 163);
+        }       
+        #janta {
+            color: rgb(96, 0, 151);
+            background-color: rgb(221, 184, 243);
+        }
+        /*Fim da formatatação div individual*/
+
+        span{ /*Formatação span geral*/
+            font-style: italic;
+        }
+        /*Inicio fomatação span individual*/
+        #n-refrigerante {
+            color:rgb(25, 0, 168);
+        }
+        #n-cafe {
+            color:rgb(0, 82, 11);
+        }
+    </style>
+
+</head>
+<body>
+    <!--Testes com <div> e <span> e um pouquinho de CSS-->
+    <h1>Lista de Comidas pro Fds por Turno</h1>
+    <div id="cafe-manha"> <!--Lista Ordenada do café da manhã-->
+        <h2>Comidas para o café da Manhã</h2>
+        <ol type="a">
+            <li>Tapioca recheada;</li>
+            <li>Panqueca de aveia e banana;</li>            
+            <li>Pão carioca com manteiga;</li>
+        </ol>
+        <span id="n-refrigerante">*não pode Refrigerante</span>
+    </div><!--Fim da Lista do café da manhã-->
+
+    <div id="almoço"> <!--Lista Ordenada do Almoço-->
+        <h2>Comidas para o Almoço</h2>
+        <ol type="A">
+            <li>Yakisoba de legumes;</li>
+            <li>Galeto com arroz;</li>
+            <li>Batata frita com feijão;</li>
+        </ol>
+        <span id="n-refrigerante">*não pode Refrigerante</span>
+    </div><!--Fim da Lista do Almoço-->
+
+    <div id="merenda"><!--Lista Ordenada da Merenda-->
+        <h2>Comidas para a Merenda</h2>
+        <ol type="i">
+            <li>Chips de banana;</li>
+            <li>Pão com manteiga;</li>
+            <li>Suco laranja;</li>
+        </ol>
+        <span id="n-cafe"> *não pode café</span>       
+    </div><!--Fim da Lista da Merenda-->
+
+    <div id="janta"> <!--Lista Ordenada da Janta-->
+        <h2>Comidas para a Janta</h2>
+        <ol type="I">
+            <li>Abacate com Aveia</li>
+            <li>Cuscuz</li>
+            <li>O que sobrar do Almoço</li>
+        </ol>
+        <span id="n-cafe">*não pode café</span>
+    </div><!--Fim da lista da Janta-->
+
+</body>
+</html>
