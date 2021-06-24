@@ -7,14 +7,23 @@
     <title>Testes com Formulários</title>
 </head>
 <body>
-
-    <p><strong>Trabalhando com Formulários</strong></p>
-
-    <form name="cadastro" action="processa.php" method="post" accept-charset="UTF-8">
-        <div>
-            <button>Enviar Dados!</button>
-        </div>
-    </form>
     
+<!--Inicio do formulario-->
+    <form action="processa.php" name="cadastro" method="POST" accept-charset="UTF-8m"> 
+        Nome: <input type="text" name="name" size="20" placeholder="Digite seu nome aqui"><br>
+        Sobrenome: <input type="text" name="surname" size="20" placeholder="Seu sobrenome" ><br>
+        Você é um robô: <input type="text" name="robo" size="1" placeholder="S/N" maxlength="1"><br>
+        Digite sua senha super confiavel: <input type="password" name="password" size="30" minlength="6" placeholder="Sua senha" required><br>
+       
+        <!--botão enviar-->
+        <input type="submit" value="      Enviar!       " ><br>
+        
+        <!--Aviso em vermelho, termos de uso-->
+        <i style="color: red;">*Ao enviar você concorda com os termos de uso!</i>
+
+    </form>
+
+
+
 </body>
 </html>
