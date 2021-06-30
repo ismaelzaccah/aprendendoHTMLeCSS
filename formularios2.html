@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios mais Avançados</title>
+
+    <style>
+        #botoes{padding-left: 60px;}
+    </style>
+        
+</head>
+<body>
+    <h1>Formulário de FeedBack</h1>
+
+    <form>
+    <!--Bolinha de seleção de Gênero-->
+        <strong>Selecione a plataforma que deseja tratar:</strong> <br>
+        <input type="radio" name="plataforma" required> Mobile
+        <input type="radio" name="plataforma" required> Windows
+        <input type="radio" name="plataforma" required> macOS/Linux<br><br>
+    <!--Menu dropdown sobre o motivo do contato-->    
+        <strong>Qual o motivo do contato?</strong>
+        <select>
+            <option>Sugestão</option>
+            <option>Reclamação</option>
+            <option>Reportar Bug</option>
+        </select> <br><br>
+        
+    <!--Adicionar anexos-->
+        <strong>Adicione imagens e prints para ajudar a ilustrar</strong>
+        <input type="file" ><br>
+        <input type="file" ><br>
+        <br>
+        
+    <!--Campos digitaveis-->
+        <input type="text" placeholder="Nome Completo" size="47"> <br>
+        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Telefone"> <br><br>
+
+    <!--Área para digitar uma mensagem-->
+        <textarea cols="44" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+        <br>
+
+    <!--Checkbox de veracidade-->
+        <input type="checkbox">
+        <i>Declaro que li e aceito o contrato uso</i> <br><br>
+    
+    <!--Botões do formulário-->
+        <div id="botoes">
+            <input type="reset" value="Limpar campos">
+            <input type="submit" value="Enviar">
+        </div>
+            
+        
+    </form>
+
+</body>
+</html>
